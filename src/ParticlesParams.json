@@ -1,0 +1,44 @@
+{
+    "particles": {
+        "number": {
+            "value": 16,
+            "density": {
+                "enable": true,
+                "value_area": 400
+            }
+        },
+        "line_linked": {
+            "enable": false
+        },
+        "move": {
+            "speed": 1,
+            "out_mode": "out"
+        },
+        "shape": {
+            "type": [
+                "image"
+            ],
+            "image": [
+                {
+                    "src": "/img/joystick.svg",
+                    "height": 20,
+                    "width": 23
+                }
+            ]
+        },
+        "color": {
+            "value": "#CCC"
+        },
+        "size": {
+            "value": 60,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 4,
+                "size_min": 10,
+                "sync": false
+            }
+        }
+    },
+    "retina_detect": false
+}
