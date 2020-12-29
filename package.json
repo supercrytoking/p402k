@@ -24,6 +24,7 @@
         "react-particles-js": "^3.4.1",
         "react-typed": "^1.2.0",
         "sass": "^1.27.1",
+        "shuffle-array": "^1.0.1",
         "swr": "^0.3.11",
         "tailwindcss": "^2.0.1"
     },

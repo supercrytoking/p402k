@@ -1,4 +1,5 @@
 import Faker from 'faker'
+import Shuffle from 'shuffle-array'
 import TestimonialsList from './Testimonals.json'
 
 export default function Testimonials() {
@@ -11,24 +12,26 @@ export default function Testimonials() {
                         <p className='text-lg'>Don't listen to us — listen to our clients.</p>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                        {TestimonialsList.map((testimonial, index) => (
-                            <div
-                                className='w-full p-6 bg-yellow-400 text-yellow-800 shadow-xl rounded-lg flex flex-col'
-                                key=''>
-                                <div className='mb-4 flex items-center space-x-4'>
-                                    <img
-                                        className='h-12 w-12 rounded-full opacity-50'
-                                        src={Faker.random.image()}
-                                        alt=''
-                                    />
+                        {Shuffle(TestimonialsList)
+                            .slice(0, 6)
+                            .map((testimonial, index) => (
+                                <div
+                                    className='w-full p-6 bg-yellow-400 text-yellow-800 shadow-xl rounded-lg flex flex-col'
+                                    key=''>
+                                    <div className='mb-4 flex items-center space-x-4'>
+                                        <img
+                                            className='h-12 w-12 rounded-full opacity-50'
+                                            src={Faker.random.image()}
+                                            alt=''
+                                        />
 
-                                    <p className='text-lg'>"{testimonial.message}"</p>
+                                        <p className='text-lg'>"{testimonial.message}"</p>
+                                    </div>
+                                    <p className='text-sm text-right font-medium mt-auto'>
+                                        {testimonial.date} &bull; {testimonial.name}
+                                    </p>
                                 </div>
-                                <p className='text-sm text-right font-medium mt-auto'>
-                                    {testimonial.date} &bull; {testimonial.name}
-                                </p>
-                            </div>
-                        ))}
+                            ))}
                     </div>
 
                     <div className='text-yellow-400 text-center'>
