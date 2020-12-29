@@ -5,9 +5,9 @@ export default function Testimonials() {
         <>
             <div id='reviews' className='h-auto w-full bg-gray-800 text-gray-400'>
                 <div className=' relative  container mx-auto py-24 px-6 text space-y-6'>
-                    <div className='text-yellow-400 text-center'>
+                    <div className='text-yellow-400 text-center space-y-2'>
                         <p className='font-extrabold text-4xl'>Don't believe us?</p>
-                        <p>Don't listen to us — listen to our clients.</p>
+                        <p className='text-lg'>Don't listen to us — listen to our clients.</p>
                     </div>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {[

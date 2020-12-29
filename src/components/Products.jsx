@@ -2,7 +2,7 @@ import useSWR from 'swr'
 
 export default function Products() {
     const { data: products, error } = useSWR(
-        'https://onlyfans.plus/wp-json/wc/v2/products/?consumer_key=ck_e0a503ffced04bc4e3d48745d6efbcdfc32f9919&consumer_secret=cs_b100b34f97a125fc080d32861d4abb6f7bbe4bed'
+        'https://onlyfans.plus/wp-json/wc/v2/products?category=57&consumer_key=ck_e0a503ffced04bc4e3d48745d6efbcdfc32f9919&consumer_secret=cs_b100b34f97a125fc080d32861d4abb6f7bbe4bed'
     )
 
     if (!products || error) return <></>

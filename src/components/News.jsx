@@ -22,14 +22,14 @@ const Post = ({ post }) => {
 }
 
 export default function News() {
-    const { data: posts, error } = useSWR('https://onlyfans.plus/wp-json/wp/v2/posts?per_page=4')
+    const { data: posts, error } = useSWR('https://onlyfans.plus/wp-json/wp/v2/posts?per_page=4&categories=56')
 
     if (!posts || error) return <></>
     return (
         <>
             <div id='news' className='bg-red-800 text-red-200 relative shadow border-t border-b border-red-700'>
                 <div className='max-w-4xl relative z-10  mx-auto py-24 px-6 space-y-8'>
-                    <p className='text-2xl sm:text-4xl font-extrabold'>Latest from LastCheat</p>
+                    <p className='text-4xl font-extrabold'>Latest from LastCheat</p>
 
                     <div className='space-y-8'>
                         {posts.map((post, index) => {
