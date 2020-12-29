@@ -22,7 +22,7 @@ const Post = ({ post }) => {
 }
 
 export default function News() {
-    const { data: posts, error } = useSWR('https://onlyfans.plus/wp-json/wp/v2/posts?per_page=4&categories=56')
+    const { data: posts, error } = useSWR('https://onlyfans.plus/wp-json/wp/v2/posts?per_page=12&categories=56')
 
     if (!posts || error) return <></>
     return (
