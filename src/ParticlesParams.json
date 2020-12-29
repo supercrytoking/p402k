@@ -20,9 +20,9 @@
             ],
             "image": [
                 {
-                    "src": "/img/joystick.svg",
+                    "src": "/img/crosshair-white.svg",
                     "height": 20,
-                    "width": 23
+                    "width": 20
                 }
             ]
         },

@@ -13,7 +13,10 @@
     },
     "dependencies": {
         "autoprefixer": "^10.1.0",
+        "currencyjs": "^1.1.1",
         "faker": "^5.1.0",
+        "moment": "^2.29.1",
+        "money": "^0.2.0",
         "next": "^10.0.3",
         "postcss": "^8.2.0",
         "react": "^17.0.1",
@@ -21,6 +24,7 @@
         "react-particles-js": "^3.4.1",
         "react-typed": "^1.2.0",
         "sass": "^1.27.1",
+        "swr": "^0.3.11",
         "tailwindcss": "^2.0.1"
     },
     "devDependencies": {
