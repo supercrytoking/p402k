@@ -7,8 +7,51 @@ html,
 body {
     height: 100%;
     scroll-behavior: smooth;
-    // color: rgb(194, 194, 194);
+    color: rgb(31, 41, 55);
     // background-color: rgb(24, 24, 24);
+}
+
+.gradient {
+    background: linear-gradient(358deg, #0d0d0d, #ff0000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 49% 0%;
+    }
+    50% {
+        background-position: 52% 100%;
+    }
+    100% {
+        background-position: 49% 0%;
+    }
+}
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 49% 0%;
+    }
+    50% {
+        background-position: 52% 100%;
+    }
+    100% {
+        background-position: 49% 0%;
+    }
+}
+@keyframes AnimationName {
+    0% {
+        background-position: 49% 0%;
+    }
+    50% {
+        background-position: 52% 100%;
+    }
+    100% {
+        background-position: 49% 0%;
+    }
 }
 
 .square {

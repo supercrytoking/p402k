@@ -13,8 +13,8 @@ export default function IndexPage() {
         <>
             <Particles className='z-0 h-full w-full fixed pointer-events-none' params={ParticlesParams} />
             <Landing />
-            <Features />
             <Products />
+            <Features />
             <Testimonials />
             <News />
             <Footer />

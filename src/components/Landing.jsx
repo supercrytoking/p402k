@@ -3,7 +3,7 @@ import Typed from 'react-typed'
 export default function Landing() {
     return (
         <>
-            <div className='min-h-full h-auto w-full bg-gradient-to-br from-red-600 via-red-500 to-yellow-600 text-white flex flex-col'>
+            <div className='h-screen gradient w-full text-white flex flex-col'>
                 <div className='p-6 absolute w-full space-x-4 text-center font-medium'>
                     <a href='#products' className='whitespace-no-wrap'>
                         Featured Products

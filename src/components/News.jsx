@@ -8,7 +8,7 @@ const Post = ({ post }) => {
         <>
             <a href={post.link} key={post.id} className='block group space-y-2'>
                 <p className='font-extrabold group-hover:underline text-2xl'>{post.title.rendered}</p>
-                <div className={`${open ? '' : 'text-purple-300 max-h-12'} relative text-md space-y-2 overflow-hidden`}>
+                <div className={`${open ? '' : 'text-red-300 max-h-12'} relative text-md space-y-2 overflow-hidden`}>
                     <p
                         // onClick={() => setOpen((s) => !s)}
                         className='space-y-2'
@@ -27,7 +27,7 @@ export default function News() {
     if (!posts || error) return <></>
     return (
         <>
-            <div id='news' className='bg-purple-800 text-purple-200 relative'>
+            <div id='news' className='bg-red-800 text-red-200 relative shadow border-t border-b border-red-700'>
                 <div className='max-w-4xl relative z-10  mx-auto py-24 px-6 space-y-8'>
                     <p className='text-2xl sm:text-4xl font-extrabold'>Latest from LastCheat</p>
 
