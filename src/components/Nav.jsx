@@ -17,7 +17,7 @@ export default function Nav() {
     return (
         <>
             <div
-                className={`w-full p-6  transform transition ease-out duration-150 px-6 border-b border-gray-800 shadow-xl z-50 bg-gray-900 text-gray-400 flex`}>
+                className={`w-full p-6  transform transition ease-out duration-150 px-6 border-b border-gray-800 shadow-xl relative z-50 bg-gray-900 text-gray-400 flex`}>
                 <div className='container m-auto flex flex-col space-y-2 sm:flex-row sm:space-y-0 items-center'>
                     <div className='text-xl text-center font-extrabold tracking-tighter text-shadow'>
                         <p>LASTCHEAT</p>
