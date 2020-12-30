@@ -7,15 +7,17 @@ import Testimonials from '../components/Testimonials/Testimonials'
 import Footer from '../components/Footer'
 import Products from '../components/Products'
 import News from '../components/News'
+import CallToAction from '../components/CallToAction'
 
 export default function IndexPage() {
     return (
         <>
-            <Particles className='z-0 h-full w-full fixed pointer-events-none' params={ParticlesParams} />
+            {/* <Particles className='z-0 h-full w-full fixed pointer-events-none' params={ParticlesParams} /> */}
             <Landing />
             <Products />
             <Features />
             <Testimonials />
+            <CallToAction />
             <News />
             <Footer />
         </>

@@ -6,8 +6,8 @@ export default function Testimonials() {
     return (
         <>
             <div id='reviews' className='h-auto w-full bg-gray-800 text-gray-400'>
-                <div className=' relative  container mx-auto py-24 px-6 text space-y-6'>
-                    <div className='text-yellow-400 text-center space-y-2'>
+                <div className=' relative  container mx-auto py-24 px-6 text space-y-8'>
+                    <div className='text-yellow-400 text-center space-y-4'>
                         <p className='font-extrabold text-4xl'>Don't believe us?</p>
                         <p className='text-lg'>Don't listen to us — listen to our clients.</p>
                     </div>
@@ -35,7 +35,6 @@ export default function Testimonials() {
                     </div>
 
                     <div className='text-yellow-400 text-center'>
-                        {/* <p className='font-extrabold text-4xl'>Don't believe us?</p> */}
                         <p className='opacity-50'>
                             Proudly servicing more than <b>1,827 clients</b> across <b>32 countries</b>.
                         </p>
