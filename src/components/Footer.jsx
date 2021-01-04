@@ -7,9 +7,6 @@ export default function Footer() {
                         <p className='font-bold'>Quick Links</p>
                         <ul className='underline'>
                             <li>
-                                <a href=''>Back to Top</a>
-                            </li>
-                            <li>
                                 <a href=''>Shop</a>
                             </li>
                             <li>
