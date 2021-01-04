@@ -16,8 +16,8 @@ export default function Testimonials() {
                             .slice(0, 6)
                             .map((testimonial, index) => (
                                 <div
-                                    className='w-full p-6 bg-yellow-400 text-yellow-800 shadow-xl rounded-lg flex flex-col'
-                                    key=''>
+                                    key={index}
+                                    className='w-full p-6 bg-yellow-400 text-yellow-800 shadow-xl rounded-lg flex flex-col'>
                                     <div className='mb-4 flex items-center space-x-4'>
                                         <img
                                             className='h-12 w-12 rounded-full opacity-50'

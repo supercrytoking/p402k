@@ -17,29 +17,25 @@ export default function Products() {
                         <p className='font-light text-3xl sm:text-5xl'>Time to get your game on.</p>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16'>
-                        {products.map((product, index) => {
-                            return (
-                                <a
-                                    href={product.permalink}
-                                    key={index}
-                                    className='block space-y-4 transition ease-in-out duration-150 transform group hover:-translate-y-2'>
-                                    <div
-                                        className='border border-gray-800 rounded-lg transition ease-in-out duration-150 shadow group-hover:shadow-lg w-100 square overflow-hidden bg-center bg-cover'
-                                        style={{
-                                            backgroundImage: `url("${product.images?.[0]?.src}")`
-                                        }}
-                                    />
+                        {products.map((product, index) => (
+                            <a
+                                key={index}
+                                href={product.permalink}
+                                className='block space-y-4 transition ease-in-out duration-150 transform group hover:-translate-y-2'>
+                                <div
+                                    className='border border-gray-800 rounded-lg transition ease-in-out duration-150 shadow group-hover:shadow-lg w-100 square overflow-hidden bg-center bg-cover'
+                                    style={{
+                                        backgroundImage: `url("${product.images?.[0]?.src}")`
+                                    }}
+                                />
 
-                                    <div className='flex text-xl'>
-                                        <p className='font-extrabold text-2xl group-hover:underline'>{product.name}</p>
-                                        <div className='ml-auto'></div>
-                                        <p className='opacity-50'>${new Intl.NumberFormat().format(product.price)}</p>
-                                    </div>
-
-                                    {/* <div>{product.categories.map((cat, index) => cat.name)}</div> */}
-                                </a>
-                            )
-                        })}
+                                <div className='flex text-xl'>
+                                    <p className='font-extrabold text-2xl group-hover:underline'>{product.name}</p>
+                                    <div className='ml-auto'></div>
+                                    <p className='opacity-50'>${new Intl.NumberFormat().format(product.price)}</p>
+                                </div>
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>

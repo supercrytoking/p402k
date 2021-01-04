@@ -33,7 +33,7 @@ export default function News() {
 
                     <div className='space-y-8'>
                         {posts.map((post, index) => {
-                            return <Post post={post} />
+                            return <Post key={index} post={post} />
                         })}
                     </div>
                 </div>

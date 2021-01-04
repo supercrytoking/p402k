@@ -12,19 +12,19 @@ export default function CallToAction() {
                         <p className='text-xl sm:text-2xl font-light'>
                             Your most exciting gaming sessions are just a few clicks away.
                         </p>
-                        <a
+                        <div
                             className='sm:hidden shadow-lg inline-block whitespace-nowrap text-sm sm:text-4xl font-extrabold uppercase px-4 py-2 bg-white text-red-600 rounded'
                             href=''>
                             Shop Now
-                        </a>
+                        </div>
                     </div>
                     <div className='hidden sm:block ml-auto w-12'></div>
                     <div className='hidden sm:block '>
-                        <a
+                        <div
                             className='block shadow-lg whitespace-nowrap text-sm sm:text-4xl font-extrabold uppercase px-4 py-2 bg-white text-red-600 rounded'
                             href=''>
                             Shop Now
-                        </a>
+                        </div>
                     </div>
                 </div>
             </a>
