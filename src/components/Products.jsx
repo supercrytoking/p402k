@@ -2,7 +2,7 @@ import useSWR from 'swr'
 
 export default function Products() {
     const { data: products, error } = useSWR(
-        'https://onlyfans.plus/wp-json/wc/v2/products?category=57&consumer_key=ck_e0a503ffced04bc4e3d48745d6efbcdfc32f9919&consumer_secret=cs_b100b34f97a125fc080d32861d4abb6f7bbe4bed'
+        `https://onlyfans.plus/wp-json/wc/v2/products?category=44&consumer_key=${process.env.NEXT_PUBLIC_WOOCOMMERCE_KEY}&consumer_secret=${process.env.NEXT_PUBLIC_WOOCOMMERCE_SECRET}`
     )
 
     if (!products || error) return <></>
@@ -17,7 +17,7 @@ export default function Products() {
                         <p className='font-light text-3xl sm:text-5xl'>Time to get your game on.</p>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16'>
-                        {products.map((product, index) => (
+                        {products?.map((product, index) => (
                             <a
                                 key={index}
                                 href={product.permalink}
