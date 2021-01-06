@@ -12,6 +12,7 @@
         "pretty": "yarn prettier --write --tab-width 4 ./src --no-semi --single-quote --trailing-comma none --print-width 120"
     },
     "dependencies": {
+        "@woocommerce/woocommerce-rest-api": "^1.0.1",
         "autoprefixer": "^10.1.0",
         "currencyjs": "^1.1.1",
         "faker": "^5.1.0",

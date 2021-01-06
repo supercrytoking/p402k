@@ -22,7 +22,7 @@ const Post = ({ post }) => {
 }
 
 export default function News() {
-    const { data: posts, error } = useSWR('https://onlyfans.plus/wp-json/wp/v2/posts?per_page=12&categories=56')
+    const { data: posts, error } = useSWR(`https://onlyfans.plus/wp-json/wp/v2/posts?per_page=12&categories=45`)
 
     if (!posts || error) return <></>
     return (
@@ -33,7 +33,7 @@ export default function News() {
 
                     <div className='space-y-8'>
                         {posts.map((post, index) => {
-                            return <Post post={post} />
+                            return <Post key={index} post={post} />
                         })}
                     </div>
                 </div>
