@@ -5,7 +5,27 @@ export default function Products() {
     `https://onlyfans.plus/wp-json/wc/v2/products?category=44&consumer_key=${process.env.NEXT_PUBLIC_WOOCOMMERCE_KEY}&consumer_secret=${process.env.NEXT_PUBLIC_WOOCOMMERCE_SECRET}`
   );
 
-  if (!products || error) return <></>;
+  const test = true;
+
+  if (test)
+    return (
+      <div className="bg-gray-900 md:py-24 text-gray-200 relative z-10 text-center items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-20 h-20 inline-block text-white animate-spin"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+          />
+        </svg>
+      </div>
+    );
   return (
     <>
       <div className="bg-gray-900 md:py-24 text-gray-200 relative z-10">
